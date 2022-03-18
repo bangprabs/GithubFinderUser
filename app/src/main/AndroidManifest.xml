@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.prabowoaz.githubfinderuser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="net.prabowoaz.githubfinderuser.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="net.prabowoaz.githubfinderuser.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/github"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/github"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+
+        <receiver android:name=".widget.ImageFavoriteWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/image_favorite_widget_info" />
+        </receiver>
+
+        <service android:name=".widget.StackWidgetServices"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <provider
+            android:name=".provider.FavoriteProvider"
+            android:authorities="net.prabowoaz.githubuserfinder"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".alarm.BroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="TODO"
+            tools:ignore="ExportedReceiver" />
+
+        <activity android:name=".activity.FavoriteActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Consumer Favorite Github</string>
+    <string name="description">Deskripsi</string>
+    <string name="temperature">Temperatur</string>
+    <string name="insert_uname">Masukkan Nama Pengguna</string>
+    <string name="search">Cari</string>
+    <string name="tab_followers">Pengikut</string>
+    <string name="tab_following">Mengikuti</string>
+    <string name="tName">Nama User</string>
+    <string name="tUrl">URL Pengguna</string>
+    <string name="detail_user">Detail Pengguna</string>
+    <string name="tUname">Nama Pengguna</string>
+    <string name="tCompany">Perusahaan</string>
+    <string name="tLocation">Lokasi</string>
+    <string name="tFollowing">\u0020 Mengikuti</string>
+    <string name="tFollowers">\u0020 Pengikut</string>
+    <string name="tRespository">\u0020 Repositori</string>
+    <string name="at">\u0020@</string>
+    <string name="find_users_github">Cari Users Github</string>
+    <string name="submission_2_dicoding_bfaa">Submission 2 Dicoding BFAA</string>
+    <string name="belum_ada_user_yang_dicari">Belum Ada User Yang Dicari</string>
+    <string name="mari_telusuri_dengan_mencari_username_nya">Mari Telusuri Dengan Mencari Username Nya :)</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="line">|</string>
+    <string name="dummySettings">Pengaturan</string>
+    <string name="dummyName">Agung Prabowo</string>
+    <string name="dummyEmail">prabowoa48@gmail.com</string>
+    <string name="dummyLanguage">Ubah Bahasa</string>
+    <string name="belum_ada_pengikut">Belum Ada Pengikut</string>
+    <string name="belum_mengikuti_siapapun">Belum Mengikuti Siapapun</string>
+    <string name="github_users_finder">Cari Pengguna Github</string>
+    <string name="by_dicoding">Dicoding Indonesia</string>
+    <string name="daftar_favorite">Daftar Favorite</string>
+    <string name="belum_ada_user_favorit">Belum Ada User Favorit</string>
+    <string name="pengingat_harian">Pengingat Harian</string>
+</resources>
